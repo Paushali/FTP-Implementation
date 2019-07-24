@@ -28,7 +28,6 @@ public class OFtpServer
         System.out.println("FTP Server Started on Port Number 21");
 //        while (true) {
             CommandThread C = new CommandThread(soc.accept());
-            //break;
 //        }
         while (true) {
             transferfile t = new transferfile(customSoc.accept());
